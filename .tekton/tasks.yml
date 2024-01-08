@@ -44,7 +44,7 @@ spec:
   params:
     - name: args
       description: Arguments to pass to nose
-      type: starting
+      type: string
       default: "-v"
   steps:
     - name: nosetests
@@ -56,4 +56,3 @@ spec:
         python -m pip install --upgrade pip wheel
         pip install -r requirements.txt
         nosetests $(params.args)
-        
